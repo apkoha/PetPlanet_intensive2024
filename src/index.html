@@ -6,6 +6,22 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetPlanet - магазин товаров для животных</title>
+
+    <link
+      rel="preload"
+      href="/fonts/onest-v6-cyrillic_latin-700.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/onest-v6-cyrillic_latin-regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin
+    />
+    <link rel="stylesheet" href="scss/index.scss" />
   </head>
   <body>
     <header class="header">
@@ -18,12 +34,16 @@
       </div>
     </header>
     <main>
-      <h1 class="vissualy-hidden">PetPlanet - магазин товаров для животных</h1>
+      <h1 class="visually-hidden">PetPlanet - магазин товаров для животных</h1>
 
       <section class="hero">
         <div class="container">
-          <h2 class="vissualy-hidden">Товары для твоих любимцев</h2>
-          <img src="./img/title.svg" alt="Товары для твоих любимцев" />
+          <h2 class="visually-hidden">Товары для твоих любимцев</h2>
+          <img
+            class="hero__title"
+            src="./img/title.svg"
+            alt="Товары для твоих любимцев"
+          />
 
           <p class="hero__text">
             Большой выбор домиков, лежанок и&nbsp;кормов для кошек и&nbsp;собак
