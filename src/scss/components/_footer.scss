@@ -105,4 +105,25 @@
     align-items: center;
     gap: 12px;
   }
+
+  &__link {
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+    border: 1px solid transparent;
+    outline: none;
+
+    &:hover {
+      color: $purple;
+    }
+
+    &:focus-visible {
+      border-color: $carrot;
+    }
+
+    &:active {
+      color: inherit;
+      outline-color: transparent;
+      opacity: 0.8;
+    }
+  }
 }

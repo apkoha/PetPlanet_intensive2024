@@ -56,10 +56,17 @@
     font-size: inherit;
     line-height: 1.4;
     color: $green;
+    transition: border-color 200ms ease-in-out;
+    outline: none;
 
     &::placeholder {
       color: $green;
       opacity: 0.4;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $carrot;
     }
   }
 
@@ -80,6 +87,19 @@
     justify-content: center;
     gap: 4px;
     min-width: 209px;
+    outline: none;
+
+    &:hover:not(:disabled) {
+      background-color: #981fd1;
+    }
+
+    &:focus-visible:not(:disabled) {
+      border-color: $carrot;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+    }
 
     @include mobile {
       padding: 0;
