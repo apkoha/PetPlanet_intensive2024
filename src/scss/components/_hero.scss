@@ -36,7 +36,17 @@
   }
 
   &_store {
+    background-size: 839px, auto;
     background-color: $green;
+    background-image: url("/img/store-cat.png"), url("/img/pattern.svg");
+
+    @include laptop {
+      background-size: 639px, auto;
+    }
+
+    @include tablet {
+      background-size: 100%, auto;
+    }
   }
 
   &__title {
