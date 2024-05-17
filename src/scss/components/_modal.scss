@@ -1,0 +1,29 @@
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  background-color: rgba(black, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &_close-button {
+    position: absolute;
+    color: #fff;
+    top: 12px;
+    right: 12px;
+    font-size: 28px;
+  }
+}
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+
+  &_content {
+  }
+
+  &__cart-items {
+  }
+}
