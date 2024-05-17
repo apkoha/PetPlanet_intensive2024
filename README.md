@@ -18,4 +18,4 @@
   }),
   ],
 
-  - API https://github.com/Quper24/pet-planet-api
+- API https://github.com/Quper24/pet-planet-api
