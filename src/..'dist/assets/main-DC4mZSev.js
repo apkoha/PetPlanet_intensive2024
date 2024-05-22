@@ -1,0 +1,1 @@
+import"./index-OwB28gDV.js";const e=document.querySelector(".subscribe__input"),d=document.querySelector(".subscribe__button");e.addEventListener("focus",()=>{e.dataset.placeholder=e.placeholder,e.placeholder=""});e.addEventListener("blur",()=>{e.placeholder=e.dataset.placeholder});e.addEventListener("input",({target:t})=>{d.disabled=!t.value.trim()});
